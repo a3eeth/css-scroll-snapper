@@ -1,1 +1,52 @@
-ECHO is on.
+/*ECHO is on.*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-y: hidden;
+}
+.parent {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  overflow-x: scroll;
+}
+.child {
+  height: 100vh;
+  min-width: 100vw;
+  scroll-snap-align: start;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+div.pager {
+  color: white;
+  position: sticky;
+  top: 10%;
+  left: 0%;
+  font-size: 500px;
+  color: rgba(255,255,255,0.5);
+}
+section.child:nth-child(1) {
+  background: teal;
+  color: white;
+}
+section.child:nth-child(2) {
+  background: pink;
+  color: red;
+}
+section.child:nth-child(3) {
+  background: yellow;
+  color: blue;
+}
+section.child:nth-child(4) {
+  background: red;
+  color: white;
+}
+section.child:nth-child(5) {
+  background: orange;
+  color: black;
+}
